@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Links to my css -->
+    <link href="capstone_css/myStyles.css" rel="stylesheet">
+    <!-- Link to css styling taken from Bootstrap website  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   
+</head>
+<!-- HTML content -->
+<body>
+    <div class="container-fluid">
+<!-- Navigation bar with links to other parts of page -->
+        <div id="navigation-bar" class="row p-2">
+            <nav class="navbar">
+                <a class="navbar-brand" href="index.html">Home</a>
+                <a class="navbar-brand" href="donate.html">Donation</a>
+                <a class="navbar-brand" href="imagePage.html">Gallery</a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+<!-- Sidebar 1 -->
+        <div class="row">
+            <div class="col-2 bg-light" ></div>
+<!-- Main column with content -->
+            <div class="col-8 main-content p-1">
+                <!-- Introduction section -->
+                <div class="section border border-light rounded" id="intro">
+                    <header>
+                        <h1 class="text-center">A Journey With Kayode</h1>
+                        <br>
+                        <div class="row align-items-center p-1">
+                            <h2>Intro</h2>
+                            <div class="col"><img src="capstone_images/intropic.jpg" class="img-fluid" alt="Kayode at festival in Portugal"></div>
+                            <div class="col text-center"><p>Hi, my name is Kayode and welcome to my travel page. Travelling is a true passion of mine and nothing gives me joy like venturing a new country!<br><br>On this webpage I am going to tell you about some of my travels and adventures, where I want to travel next, and how you can help me reach my goal: <b>Travelling to every country in the world!</b></p></div>
+                        </div>
+                        
+                    </header>
+                </div>
+                
+                <!-- Previous countries I have been to in list -->
+                <div class="section border border-light rounded p-1 mt-1" id="previous-countries"><h2>Previous countries</h2>
+                    <div class="row "><p>I have been fortunate to travel to several countries in my life and I cannot wait to travel to some more. Check out the list below:</p>
+                        <div class="row">
+                            <section class="col-5">
+                            <h4>Europe</h4>
+                            <ul>
+                                <li>Netherlands</li>
+                                <li>France</li>
+                                <li>Spain</li>
+                                <li>Portugal</li>
+                                <li>Italy</li>
+                                <li>Malta</li>
+                                <li>Cyprus</li>
+                                <li>Greece</li>
+                            </ul>
+                            </section>
+                            <section class="col-5">
+                                <h4>North America/Caribbean</h4>
+                                <ul>
+                                    <li>Trinidad & Tobago</li>
+                                    <li>Antigua</li>
+                                    <li>Barbados</li>
+                                    <li>St Lucia</li>
+                                    <li>St Martin</li>
+                                    <li>St Croix</li>
+                                </ul>
+                            </section>
+                            <section class="col-5">
+                                <h4>Asia</h4>
+                                <ul>
+                                    <li>Singapore</li>
+                                    <li>Indonesia</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>    
+
+                <!-- Future holiday sections in tables -->
+                <div class="section border border-light rounded p-1 mt-1" id="future-countries"><h2>Future Expeditions</h2>
+                    <div class="row">
+                        <p>I hope to make more special memories like the ones above in the future. I love a variety of different cultures and experiences which is why I want to travel to every single country. In particular though, there are certain countries which are top of my list!
+                        </p>
+                    </div>
+                    <div class="align-items-center">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Continent</th>
+                                <th scope="col">Country</th>
+                                <th scope="col">Travel Date</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Europe</th>
+                                <td>Hungary</td>
+                                <td>Jan 2023</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Africa</th>
+                                <td>Ghana</td>
+                                <td>December 2023</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">North America</th>
+                                <td>Mexico</td>
+                                <td>March 2023</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">South America</th>
+                                <td>Brazil</td>
+                                <td>TBD</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Asia</th>
+                                <td>Thailand</td>
+                                <td>Feb 2024</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Australia</th>
+                                <td>Australia</td>
+                                <td>TBD</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+
+                <!-- Extra information with radio form and links to socials -->
+                <div class="section border border-light rounded p-1 mt-1" id="extra_info">
+                    <h2>Extra Info</h2>
+                    <p>You, my readers, are what helps make what I do possible. To give back to you,  I am committed to making and sharing the best content possible. To improve, I'd like for you to tell me what type of content you want to see me upload in the near future:</p>
+
+                    <form>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                TikTok Shorts
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Instagram Reels
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                Youtube Vlogs
+                            </label>
+                        </div><br>
+                        <button type="submit" class="btn btn-primary">Submit</button>    
+                    </form><br>
+                    <a href="https://www.youtube.com/" target="_blank">To visit my Youtube click here</a><br>
+                    <a href="https://www.instagram.com/" target="_blank">To visit my Instagram click here</a>
+
+                </div>
+                
+
+
+            </div>
+
+
+<!-- Sidebar 2 -->
+            <div class="col-2 bg-light"></div>
+        </div>
+
+        <div class="section row">
+            <footer><q class="fst-italic">Adventures are the best way to learn</q></footer>
+        </div>
+
+        
+
+    </div>
+
+
+</body>
+
+</html>
