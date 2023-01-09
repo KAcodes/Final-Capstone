@@ -3,6 +3,10 @@
     height: 100%;
 }
 
+.section {
+    position: relative;
+}
+
 .sides {
     background-color: aliceblue;
 }
@@ -12,6 +16,18 @@
     text-align: center;
 }
 
+.interactions {
+    position: absolute;
+    right: 0.25em;
+    bottom: 0.25em;
+}
+
+.pic-interactions {
+    position: absolute;
+    right: 0.25em;
+    bottom: 0.25em;
+}
+
 #test {
     background-color: black;
 }
@@ -19,6 +35,8 @@
 #navigation-bar {
     background-color: rgb(236, 236, 236);
 }
+
+
 
 
 
