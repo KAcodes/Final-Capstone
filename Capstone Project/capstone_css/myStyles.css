@@ -16,6 +16,14 @@
     text-align: center;
 }
 
+.liked-heart {
+    color: red;
+}
+
+.saved {
+    color: blue;
+}
+
 .interactions {
     position: absolute;
     right: 0.25em;
@@ -24,9 +32,11 @@
 
 .pic-interactions {
     position: absolute;
-    right: 0.25em;
+    right: 1.5em;
     bottom: 0.25em;
 }
+
+
 
 #test {
     background-color: black;
