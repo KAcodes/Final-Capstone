@@ -30,13 +30,13 @@ function preLoad() {
 let save = document.querySelectorAll("i.fa-save");
 
 save.forEach(heart => heart.addEventListener("click", (e) => {
-    e.currentTarget.classList.toggle("saved")
-    if (e.currentTarget.classList.contains("saved") == true) {
-        console.log("saved")
+    e.currentTarget.classList.toggle("saved");
+    if (e.currentTarget.classList.contains("saved")) {
+        console.log("saved");
         console.log(e.currentTarget.closest(".section"))
     }   else {
-        console.log("unsaved")
-        console.log(e.currentTarget)
+        /* console.log("unsaved")
+        console.log(e.currentTarget) */
     }
 }))
 
