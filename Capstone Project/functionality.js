@@ -1,60 +1,113 @@
-let liked = document.querySelectorAll("i.fa-heart");
-
-liked.forEach(heart => heart.addEventListener("click", (e) => {
-    e.currentTarget.classList.toggle("liked-heart")
-}))
 
 
+/* const saveContent = (key, event) => {
+    
 
+    let element = (event.currentTarget.closest(".saveable"));
+    let words = element.innerHTML
+    let savelist = JSON.parse(sessionStorage.getItem('savedContent'))
+    
+    if (savelist == null) {
 
-let savedItems = [];
+        event.currentTarget.classList.toggle("saved");
 
-function preLoad() {
+        if (event.currentTarget.classList.contains("saved")) {
+           
+          
+   
+            savedContent = {
+               ...savedContent,
+               [key]: words 
+             };
+           sessionStorage.setItem('savedContent', JSON.stringify(savedContent)); 
+   
+       }    else {
+           delete savedContent[key];
+           sessionStorage.setItem('savedContent', JSON.stringify(savedContent));  
+       }  
+       
         
-    //if no items are in session storage an empty array is created and this is set as a "books" storage item
-    //otherwise this "books" item is taken from session storage and create item is called for each object within books array
-  
-    if (localStorage.getItem("Saved") === null) {
-        localStorage.setItem("Saved", JSON.stringify(savedItems));
+    } else if (savelist[key] == null){
+
+        event.currentTarget.classList.toggle("saved");
+
+        if (event.currentTarget.classList.contains("saved")) {
+           
+          
+   
+            savedContent = {
+               ...savedContent,
+               [key]: words 
+             };
+           sessionStorage.setItem('savedContent', JSON.stringify(savedContent)); 
+   
+       }    else {
+           delete savedContent[key];
+           sessionStorage.setItem('savedContent', JSON.stringify(savedContent));  
+       }  
+
     } else {
-        savedItems = JSON.parse(localStorage.getItem("Saved"));
-        savedItems.forEach((thisItem) => {
-            
-            let body = document.querySelector("main-content");
-            body.append(thisItem);
-        })
-        
+        alert("already there")
     }
-}
 
-let save = document.querySelectorAll("i.fa-save");
+    
+}; */
 
-save.forEach(heart => heart.addEventListener("click", (e) => {
-    e.currentTarget.classList.toggle("saved");
-    if (e.currentTarget.classList.contains("saved")) {
-        console.log("saved");
-        console.log(e.currentTarget.closest(".section"))
-    }   else {
-        /* console.log("unsaved")
-        console.log(e.currentTarget) */
+let isSaved = {};
+
+let savedContent = {};
+
+if (sessionStorage.getItem("savedContent") === null) {
+    savedContent = {};
+    isSaved = {};
+} else {
+     savedContent = JSON.parse(sessionStorage.getItem("savedContent"))
+     isSaved = JSON.parse(sessionStorage.getItem("isItSaved"))
     }
-}))
+    
 
 
-function preLoad() {
+const saveContent = (key, event) => {
+
+    let element = (event.currentTarget.closest(".saveable"));
+    let words = element.innerHTML
+   
+    
+        event.currentTarget.classList.toggle("saved");
+
+    
+
+            if (event.currentTarget.classList.contains("saved")) {
+           
+                savedContent = {
+                   ...savedContent,
+                   [key]: words 
+                 };
+               sessionStorage.setItem('savedContent', JSON.stringify(savedContent)); 
+       
+           }    else {
+               delete savedContent[key];
+               sessionStorage.setItem('savedContent', JSON.stringify(savedContent));  
+           }  
+       
+
         
-    //if no items are in session storage an empty array is created and this is set as a "books" storage item
-    //otherwise this "books" item is taken from session storage and create item is called for each object within books array
-    let savedItems = [];
-    if (localStorage.getItem("Saved") === null) {
-        localStorage.setItem("Saved", JSON.stringify(savedItems));
+
+
+
+     /*    if (JSON.parse(sessionStorage.getItem('isItSaved')).key == true) {
+        alert("")
     } else {
-        savedItems = JSON.parse(localStorage.getItem("Saved"));
-        savedItems.forEach((thisItem) => {
-            
-            let body = document.querySelector("main-content");
-            body.append(thisItem);
-        })
-        
-    }
-}
+        isSaved = {
+            ...isSaved,
+            [key]: true
+          };
+
+    sessionStorage.setItem('isItSaved', JSON.stringify(isSaved))
+    } */
+
+     
+       
+};
+
+
