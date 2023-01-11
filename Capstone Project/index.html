@@ -192,8 +192,68 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
                 </div>
-                
 
+
+                <!-- Comments form -->
+                <div class="section border border-light rounded p-1 mt-1 saveable"id="donate">
+                    <h2>Comments</h2>
+                    <div>
+                        <p>Feel free to leave some comments below!</p>
+
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="user_name" class="form-control" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="fakeComment">Comment</label>
+                                <input type="text" class="form-control" id="fakeComment" aria-describedby="" placeholder="Enter comment">
+                                
+                            </div><br>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+                    </div>
+                    <div class="interactions">
+                        <i class="fas fa-save" onclick="saveContent(5, event)"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+
+                <!-- Contact Form -->
+                <div class="section border border-light rounded p-1 mt-1 saveable"id="donate">
+                    <h2>Contact Me</h2>
+                    <div>
+                        <p>If you would like to get in contact with me please do so below. Would be great to hear from you!</p>
+
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="user_name" class="form-control" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="money">Message</label>
+                                <input type="text" id="money" name="donated_amount" class="form-control" placeholder="Enter your message here">
+                            </div><br>
+                            <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Send a copy to your email</label>
+                            </div><br>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+                    </div>
+                    <div class="interactions">
+                        <i class="fas fa-save" onclick="saveContent(6, event)"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
 
             </div>
 

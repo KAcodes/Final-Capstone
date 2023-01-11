@@ -76,25 +76,26 @@ const saveContent = (key, event) => {
     
 
             if (event.currentTarget.classList.contains("saved")) {
-                alert("Saved")
+                
                 savedContent = {
                    ...savedContent,
                    [key]: words 
                  };
                sessionStorage.setItem('savedContent', JSON.stringify(savedContent)); 
+                 //console.log(savedContent)
 
+                 let count = 0;
+                for(let items in savedContent) {
+                    ++count;
+                }
+
+               alert(`Item saved for later. \nThere are ${count} items in the saved list.`)
        
            }    else {
-                alert("Unsaved")
+                alert("Item unsaved for later")
                delete savedContent[key];
                sessionStorage.setItem('savedContent', JSON.stringify(savedContent));  
            }  
-       
-
-        
-
-
-     
        
 };
 
