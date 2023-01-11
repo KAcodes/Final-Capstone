@@ -42,3 +42,7 @@ const saveContent = (key, event) => {
 };
 
 
+const heart = (event) => {
+
+    event.currentTarget.classList.toggle("liked-heart")
+}
