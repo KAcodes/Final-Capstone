@@ -59,10 +59,8 @@ let savedContent = {};
 
 if (sessionStorage.getItem("savedContent") === null) {
     savedContent = {};
-    isSaved = {};
 } else {
      savedContent = JSON.parse(sessionStorage.getItem("savedContent"))
-     isSaved = JSON.parse(sessionStorage.getItem("isItSaved"))
     }
     
 
@@ -78,14 +76,16 @@ const saveContent = (key, event) => {
     
 
             if (event.currentTarget.classList.contains("saved")) {
-           
+                alert("Saved")
                 savedContent = {
                    ...savedContent,
                    [key]: words 
                  };
                sessionStorage.setItem('savedContent', JSON.stringify(savedContent)); 
+
        
            }    else {
+                alert("Unsaved")
                delete savedContent[key];
                sessionStorage.setItem('savedContent', JSON.stringify(savedContent));  
            }  
@@ -93,18 +93,6 @@ const saveContent = (key, event) => {
 
         
 
-
-
-     /*    if (JSON.parse(sessionStorage.getItem('isItSaved')).key == true) {
-        alert("")
-    } else {
-        isSaved = {
-            ...isSaved,
-            [key]: true
-          };
-
-    sessionStorage.setItem('isItSaved', JSON.stringify(isSaved))
-    } */
 
      
        
