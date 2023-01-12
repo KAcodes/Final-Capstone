@@ -1,9 +1,0 @@
-
-
-Make a save for later page which uses local storage to store all items a user has saved in there which is retrievable later, also option to remove it  
-
-Create a like button which user presses and colour changes
-
-Create forms where user can enter comments
-
-Create a contact form where user can enter their details, both of these forms don't actually have to submit info but just make them have functionality. 
