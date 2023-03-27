@@ -1,5 +1,10 @@
 # Final-Capstone Project
 
+
+* Note * 
+
+This project has not been amended since creation, as a marker to see my progress in all coding aspects.  
+
 ## Project Description
 
 The task was to create a blog-type page of our choice whilst implementing a save for later page. As one of my passions, I created a website which showcases some of my travel history with pictures, forms (no database functionality) and interactive elements. User can like items and save sections or images on pages which can be later viewed on the save for later page. We had to only use HTML, CSS and Javascript, which was our first time combining all three web development components. This project I utilised JSON handling and learnt how to use session storage to store divs on the page. I used Bootstrap to compose a grid container across the site, and assist with styling elements. 
